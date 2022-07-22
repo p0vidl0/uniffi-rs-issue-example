@@ -1,0 +1,20 @@
+[package]
+name = "uniffi-rs-issue-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+uniffi_macros = "0.19.2"
+uniffi = {version="0.19.2", features=["builtin-bindgen"]}
+
+[build-dependencies]
+uniffi_build = {version="0.19.2", features=["builtin-bindgen"]}
+
+[lib]
+name = "rsl"
+crate-type = ["lib", "cdylib"]
+
+[target.aarch64-linux-android]
+linker = "aarch64-linux-android-gcc"

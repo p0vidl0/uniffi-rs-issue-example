@@ -5,9 +5,11 @@
 ## Configure rust environment
 
 * Install android NDK https://developer.android.com/ndk/downloads
+* export PATH=$PATH:(NDK_PATH)/android-ndk-r25/toolchains/llvm/prebuilt/linux-x86_64/bin
 * Fix error like `ld: error: unable to find library -lgcc`: https://github.com/rust-lang/rust/pull/85806#issuecomment-1096266946
 
 ```shell
+cargo install uniffi_bindgen@0.19.3
 cargo install cargo-ndk
 rustup default nightly
 rustup default stable

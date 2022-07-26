@@ -6,11 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-uniffi_macros = "0.19.2"
-uniffi = {version="0.19.2", features=["builtin-bindgen"]}
+uniffi_macros = "=0.19.3"
+uniffi = {version="=0.19.3", features=["builtin-bindgen"]}
 
 [build-dependencies]
-uniffi_build = {version="0.19.2", features=["builtin-bindgen"]}
+uniffi_build = {version="=0.19.3", features=["builtin-bindgen"]}
 
 [lib]
 name = "rsl"
